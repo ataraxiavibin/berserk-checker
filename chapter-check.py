@@ -69,8 +69,10 @@ def main():
         print(f"Either a first run or a cache reset. Current chapter: {last_chapter}")
         dump_cache(times_ran + 1, last_chapter)
     elif last_known != last_chapter:
-        print(f"NEW CHAPTER DETECTED: {last_chapter}")
-        dump_cache(times_ran + 1, last_chapter)
+        print(f"NEW CHAPTER DETECTED: {last_chapter}. Go read!")
+        print(f"Resetting times_ran variable...")
+        new_times_ran = 1
+        dump_cache(new_times_ran, last_chapter)
     else:
         print(f"No changes. Checked {times_ran} times.")
         print(f"Struggle, contend, wriggle! For that alone is the sword of one who confronts death.")
