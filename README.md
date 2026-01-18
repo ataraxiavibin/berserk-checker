@@ -5,3 +5,5 @@ An easy web-scraper project that checks if a new Berserk chapter is out.
 - Gets the latest chapter (in theory) and compares to the last known one
 - Notifies of a new chapter. If not, motivates.
 
+# To-Do:
+- Use real API lol
